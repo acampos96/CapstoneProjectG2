@@ -7,7 +7,7 @@ This project was cloned on 08-11-2025 for our Capstone Project
 `git clone https://github.com/acampos96/CapstoneProjectG2.git`
 ### Create a dockerfile inside the working directory
 `nano dockerfile`  
-Inside the dockerfile you fill the following commands:
+Inside the dockerfile you fill the following commands:  
 `FROM nginx`  
 `COPY ./index.html /usr/share/nginx/html`  
 `COPY ./js /usr/share/nginx/html/js`  
