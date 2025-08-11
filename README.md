@@ -18,15 +18,4 @@ Then, you press Ctrl + X to writeout the file.
 The next step is to build the docker image, in order to do that we'll use the following command:  
 `sudo docker build -t capstone-nginx-1 .`  
 ### Run the container
-`sudo docker run --name capstone-nginx-1 -d -p 80:80`  
-
-
-
-## Europe-Travel-Website-html-css-js
-Create A Responsive Tour &amp; Travel Agency Website Design Using HTML / CSS / JS
-A Responsive Adventure & Tour Website Design Using HTML CSS  & JavaScript Step By Step
-
-  
-### HTML
-### CSS
-### JS
+`sudo docker run --name capstone-nginx-1 -d -p 80:80`    
