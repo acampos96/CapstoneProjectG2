@@ -19,3 +19,9 @@ The next step is to build the docker image, in order to do that we'll use the fo
 `sudo docker build -t capstone-nginx-1 .`  
 ### Run the container
 `sudo docker run --name capstone-nginx-1 -d -p 80:80`    
+
+## Push Docker image to Artifact Registry  
+
+### Enable Artifact Registry API
+
+`docker tag capstone-nginx-1 us-east1-docker.pkg.dev/oasanchez-group2-dev/capstone-project-registry/capstone-nginx-1:v1`
