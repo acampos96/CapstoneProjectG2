@@ -103,6 +103,10 @@ Run the following command with gcloud CLI to create your GKE Cluster:
 
 `gcloud container clusters create my-gke-cluster --zone us-central1-a --num-nodes=2`   
 
+Then we need to run the next command to tell gcloud that we want to work with our GKE Cluster  
+
+`gcloud container clusters get-credentials my-gke-cluster --zone us-central1-a`  
+
 Then we need to GKE how to deploy our app with a deplyment.yaml file including the following configuration:  
 
 ```yaml,
@@ -137,11 +141,11 @@ We also need a service.yaml to let GKE know how we want to access our applicatio
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-app-service # The name of your service
+  name: my-app-service 
 spec:
   type: LoadBalancer
   selector:
-    app: my-app # This MUST match the 'app' label in your deployment.yaml
+    app: my-app 
   ports:
   - protocol: TCP
     port: 80       
