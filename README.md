@@ -123,9 +123,9 @@ spec:
       containers:
       - name: my-app-container
        
-        image: us-central1-docker.pkg.dev/your-gcp-project-id/your-repo-name/your-image:tag
+        image: your-region-docker.pkg.dev/gcp-project/name-of-your-repo/your-docker-image
         ports:
-        - containerPort: 8080 # The port your application listens on inside the container
+        - containerPort: 80  
 ```
 Then we need to apply the deployment with the following command:  
 
