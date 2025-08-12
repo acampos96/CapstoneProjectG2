@@ -144,8 +144,8 @@ spec:
     app: my-app # This MUST match the 'app' label in your deployment.yaml
   ports:
   - protocol: TCP
-    port: 80       # The port the public Load Balancer will listen on
-    targetPort: 8080 # The port to forward traffic to on your container
+    port: 80       
+    targetPort: 80
 ```
 
 Then we need to apply this configuration with the following command:
